@@ -1,0 +1,18 @@
+.jumbotron{
+	/*background: url(../img/cover.jpg);*/
+	background-size: cover;
+	color: #ffffff;
+	height: 30rem;
+	background-color:black;
+}
+
+.navbar{
+	margin: 0;
+	background: url(../img/CEMENT.jpg);
+	border: 0px;
+}
+
+.nav.navbar-nav.navbar-right li a{
+	color: white;
+}
+

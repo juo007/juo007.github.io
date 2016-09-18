@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>James Oh</title>
+		<meta charset="UTF-8"/>
+		
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+		<link href='https://fonts.google.com/?category=Serif,Sans+Serif,Display,Monospace&selection.family=Baloo+Bhaina|Roboto+Slab|Slabo+27px' rel='stylesheet' type='text/css'/>
+		<link rel="stylesheet" href= "css/style.css" type="text/css" />
+		
+	</head>	
+	<body ng-app="MainApp">
+		<nav class="navbar navbar-inverse navbar-static-top">
+			<div class="container">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active">
+						<a href="#">Home</a>
+					</li>
+					<li>
+						<a href="#">About Me</a>
+					</li>
+					<li>
+						<a href="#">Experience</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<section class="jumbotron" ng-controller="JumboController">
+			<div class="container">
+				<div class="row text-center">
+					<h1>{{greeting}}</h1>
+					<h2> James JuHyun Oh</h2>
+					<p> Computer Engineer</p>
+				</div>
+			</div>
+		</section>
+		
+		<script src="js/vendor/angular.min.js"></script>
+		<!-- Modules -->
+		<script src="js/app.js"/>
+		<!-- Controllers -->
+		<script src="js/controllers/JumboController.js"/>
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"/>
+		<!-- Latest compiled JavaScript -->
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"/>
+
+	</body>
+</html>
