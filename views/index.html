@@ -4,29 +4,28 @@
 		<title>James Oh</title>
 		<meta charset="UTF-8"/>
 		
-
+		<base href="/"></base>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
 		<link href='https://fonts.google.com/?category=Serif,Sans+Serif,Display,Monospace&selection.family=Baloo+Bhaina|Roboto+Slab|Slabo+27px' rel='stylesheet' type='text/css'/>
 		<link rel="stylesheet" href= "css/style.css" type="text/css" />
-		
 	</head>	
 	<body ng-app="MainApp">
-		<nav class="navbar navbar-inverse navbar-static-top">
+		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
 				<ul class="nav navbar-nav navbar-right">
 					<li class="active">
-						<a href="#">Home</a>
+						<a href="#/" class="views">About Me</a>
 					</li>
 					<li>
-						<a href="#">About Me</a>
+						<a href="#/experience" class="views">Experience</a>
 					</li>
 					<li>
-						<a href="#">Experience</a>
+						<a id="contact">Contact</a>
 					</li>
 				</ul>
 			</div>
 		</nav>
-		<section class="jumbotron" ng-controller="JumboController">
+		<section class="jumbotron" ng-controller="JumboController" style="background-image: url({{img}}); background-size:cover; color: {{color}}">
 			<div class="container">
 				<div class="row text-center">
 					<h1>{{greeting}}</h1>
@@ -35,17 +34,53 @@
 				</div>
 			</div>
 		</section>
-		
-		<script src="js/vendor/angular.min.js"></script>
-		<!-- Modules -->
-		<script src="js/app.js"/>
-		<!-- Controllers -->
-		<script src="js/controllers/JumboController.js"/>
+		<div class="main">
+			<div class="container-fluid">
+				<div ng-view></div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-4">
+						<h1>Contact Me</h1>
+						<ul>
+							<li>Filler</li>
+							<li>Filler</li>
+							<li>Filler</li>
+						<ul>
+					</div>
+					<div class="col-md-4">
+						<h1>Filler</h1>
+						<ul>
+							<li>FILLING</li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<h1>Filler</h1>
+						<ul>
+							<li>FILLING</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
 
+		
 		<!-- jQuery library -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<!-- Latest compiled JavaScript -->
-		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"/>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+		<!-- Custom Scripts -->
+		<script type="text/javascript" src="js/scripts.js"></script>
+		<script src="js/vendor/angular.min.js"></script>
+		<script src="js/vendor/angular-route.min.js"></script>
+		<!-- Modules -->
+		<script src="js/app.js"></script>
+		<!-- Controllers -->
+		<script src="js/controllers/JumboController.js"></script>
+		<script src="js/controllers/AboutController.js"></script>
 
 	</body>
 </html>
