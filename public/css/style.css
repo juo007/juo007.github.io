@@ -1,18 +1,73 @@
 .jumbotron{
-	/*background: url(../img/cover.jpg);*/
-	background-size: cover;
-	color: #ffffff;
-	height: 30rem;
-	background-color:black;
+	/*background: url(../img/geisel.jpg);*/
+	/*background-size: cover;*/
+	margin-bottom:0;
+	min-height: 40rem;
+	font-weight: 700;
+	font-family: 'Baloo-Bhaina', 'Roboto';
 }
 
 .navbar{
 	margin: 0;
-	background: url(../img/CEMENT.jpg);
 	border: 0px;
 }
 
-.nav.navbar-nav.navbar-right li a{
-	color: white;
+.nav.navbar-nav.navbar-right li a:hover{
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+
+#contact{
+	cursor: pointer;
+}
+
+.jumbotron h1{
+	position: relative;
+	top: 50px;
+}
+.jumbotron h2{
+	position: relative;
+	top: 100px;
+}
+
+.jumbotron p{
+	position: relative;
+	top: 100px;
+}
+
+
+
+
+.row img{
+	border-radius: 50%;
+	border: 1px solid black;
+	max-height: 35rem;
+	margin: 5px auto;
+}
+
+button {
+	background:url('../img/next.svg');
+	background-size: 200px 200px;
+	display:inline;
+	float:right;
+	margin: auto 0;
+	border-radius: 100%;
+	text-decoration: none;
+}
+
+.footer{
+	border-top: 1px solid #dbdbdb;
+	/*background: url(../img/CEMENT.jpg);*/
+	padding: 80px 0px 0px;
+	background-color: #f3f3f3;
+}
+.footer ul{
+	list-style-type:none;
+	padding-left: 0;
+}
+.footer li{
+	color: #999;
+	font-weight: 600;
+}
+
+
 
