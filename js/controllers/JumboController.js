@@ -3,7 +3,7 @@ app.controller('JumboController', ['$scope', function($scope){
 	var date = new Date();
 	var hours = date.getHours();
 	
-	if (hours >= 0  && hours < 5){
+	if (hours >= 22  || hours < 5){
 		$scope.greeting = 'Good Night';
 		$scope.img = '../img/night.jpg';
 		$scope.color = 'white';
@@ -17,7 +17,7 @@ app.controller('JumboController', ['$scope', function($scope){
 		$scope.color = 'white';
 	}else{
 		$scope.greeting = 'Good Evening';
-		$scope.evening = '../img/evening.jpg';
+		$scope.img = '../img/evening.jpg';
 		$scope.color = 'white';
 	}
 }]);

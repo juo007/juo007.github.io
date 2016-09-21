@@ -1,28 +1,33 @@
-<div class = "row first"  id="about">
+<div class = "row first"  id="intro">
 	<div class="col-md-4">
-		<img src="img/profile.png" class="img-responsive"/>
+		<img src="img/profile.png" class="img-responsive"
+			 onmouseover="this.src='img/profile2.png';"
+			 onmouseout="this.src='img/profile.png';"
+			 id="profile"/>
 	</div> 
 	<div class="col-md-8">
 		<div class="page-header">
 			<h3>
-				About Me &nbsp<small>Bio</small>
+				Introduction
 			</h3>
 		</div>
-		<p> Hi, my name is James Oh</p>
-		<a href="#/education"><button class="next" onclick="update()">Next</button></a>
+		<p> Welcome! Thanks for stumbling upon an early product in my web development journey.</p>
+		<p> </p>
+		<a href="#/about"><button class="next" onclick="update()">Next</button></a>
 		<script>
 			function update(ex){
 				$(".nav").find(".active").removeClass("active");
-				$(".nav").find("#education").addClass("active");
+				$(".nav").find("#about").addClass("active");
 			}
 		</script>
+		<script src="js/scripts.js"></script>
 	</div>
 </div>
 <div class = "row second">
 	<div class="col-md-8">
 		<div class="page-header" style="text-align: right">
 			<h3>
-				About Me &nbsp<small>Hobbies</small>
+				Components
 			</h3>
 		</div>
 		<p> Welcome! Thank you for stumbling upon my website  </p>
@@ -31,7 +36,7 @@
 		<table>
 			<tr>
 				<td><img src="img/angularJS.png" class="img-responsive"/></td>
-				<td><img src="img/nodejs.png" class="img-responsive"/></td> 
+				<td><img src="img/nodejs.png" class="img-responsive" style="padding-left:5px"/></td> 
 			</tr>
 			<tr>
 				<td><img src="img/html5.png" class="img-responsive"/></td>
@@ -40,4 +45,3 @@
 		</table>
 	</div> 
 </div>
-<script src="scripts.js"></script>

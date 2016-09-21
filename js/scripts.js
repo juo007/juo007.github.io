@@ -5,12 +5,12 @@ $(document).ready(function(){
 		$(this).parent().addClass("active");
 	});
 	
-	$(".views").click(function() {
-		$("html, body").animate({ scrollTop: $(document).height()/2 }, "fast");
+	$(".views, .button").click(function() {
+		$("html, body").animate({ scrollTop: $(document).height()/4 }, "fast");
 	});
 	
 	$("#contact").click(function() {
-		$("html, body").animate({ scrollTop: $(document).height() }, "slow");
+		$("html, body").animate({ scrollTop: $(document).height() }, "fast");
 	});
 	
 });
