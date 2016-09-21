@@ -17,7 +17,7 @@ app.controller('JumboController', ['$scope', function($scope){
 		$scope.color = 'white';
 	}else{
 		$scope.greeting = 'Good Evening';
-		$scope.evening = '../img/evening.jpg';
+		$scope.img = '../img/evening.jpg';
 		$scope.color = 'white';
 	}
 }]);
