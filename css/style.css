@@ -46,7 +46,7 @@ li{
 	height: 40rem;
 }
 
-.row.first>.col-md-4, .row.second>.col-md-4, .row.first>.col-md-8, .row.second>.col-md-8 {
+.row.first>.col-md-4, .row.second>.col-md-4{
 		height: 100%;
 		display: flex;
 }
